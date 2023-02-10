@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="headerFlexContainer">
+    <div class="profileImg">
+        <img src="{{ url_for('static', filename='profile_pic.jpg') }}" alt="Shantay's Profile Picture"/>
+    </div> 
+    <h1>Shantay Dixon</h1>
+    <p class="par1">
+        @sdixon<br>
+        St. Catherine, Jamaica<br>
+        {{joinDate}}
+    </p>       
+</div>
+<div class="profileDescription">
+    <p>
+        I am a smart and talented young woman who loves website design and development. Contact me if you'd like to work together on a new project.
+    </p>
+</div>
+<div class="metricsContainer">
+    <div class="metricsCount">
+        <div class="metric">
+            <p1>7</p1>
+            <p2>Posts</p2>
+        </div>
+        <div class="metric">
+            <p1>100</p1>
+            <p2>Following</p2>
+        </div>
+        <div class="metric">
+            <p1>250</p1>
+            <p2>Followers</p2>
+        </div>
+    </div>
+</div>
+
+<div class="btnContainer">
+    <button type="submit" class="btn">Follow</button>
+</div>
+{% endblock %}

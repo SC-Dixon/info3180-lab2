@@ -1,5 +1,6 @@
 from app import app
 from flask import render_template, request, redirect, url_for, flash
+import datetime
 
 
 ###
@@ -16,6 +17,14 @@ def home():
 def about():
     """Render the website's about page."""
     return render_template('about.html', name="Mary Jane")
+
+
+@app.route('/profile')
+def profile():
+    """"Render the website's profile page."""
+    dateJoined = datetime.date(2023, 2, 7) # today's date
+    date_Joined = format_date_joined(dateJoined)
+    return render_template('profile.html', joinDate=date_Joined)
 
 
 ###
@@ -45,3 +54,10 @@ def add_header(response):
 def page_not_found(error):
     """Custom 404 page."""
     return render_template('404.html'), 404
+
+
+
+
+def format_date_joined(date):
+    date_Joined = "Joined " + date.strftime("%B, %Y")
+    return date_Joined

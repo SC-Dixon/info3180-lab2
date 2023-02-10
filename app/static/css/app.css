@@ -1,3 +1,98 @@
 body {
     padding-top: 5rem;
 }
+
+.headerFlexContainer{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    background-color:#63B3ED ;
+    color: #FFFFFF;
+    grid-column: col-start / span 12;
+    padding: 40px;
+}
+
+.profileImg img {
+    width: 200px;
+    height: 185px;
+    border-radius: 50%;
+}
+
+.headerFlexContainer .par1{
+    text-align: center;
+}
+
+.profileDescription{
+    align-items: center;
+}
+
+.profileDescription p{
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+.metricsContainer .metricsCount{
+    text-align: center;
+
+}
+
+.metric{
+    display: inline-block;
+    padding: 10px 10px;
+    vertical-align: middle;
+}
+
+.metric p2{
+    position: relative;
+    top: 30px;
+    right: 30px;
+}
+
+.metric p1{
+    font-weight: bold;
+
+}
+
+.metricsContainer .metricsCount .metric:nth-child(2) p1{
+    position: relative;
+    left: 10px;
+}
+
+.metricsContainer .metricsCount .metric:nth-child(2) p2{
+    right: 40px;
+}
+
+.metricsContainer .metricsCount .metric:nth-child(3) p2{
+    right: 50px;
+
+}
+
+.metric{
+    position: relative;
+    left: 50px;
+}
+
+.btnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.btn{
+    border-radius: 5px;
+    background-color: purple;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    width: 100px;
+    margin: 5px;
+}
+
+
+
